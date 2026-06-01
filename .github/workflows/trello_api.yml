@@ -28,4 +28,4 @@ jobs:
 
     
       - name: Run Rollection
-        run: newman run Trello_collection.json -e Trello_Prod_environment.json
+        run: newman run Trello_collection.json -e Trelllo_Prod_environment.json

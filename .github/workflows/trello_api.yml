@@ -28,7 +28,9 @@ jobs:
        
       - name: Run Rollection
        env:
-         POSTMAN_AI_KEY:  ${{ secrets.Postman_AI_KEY }}
-         POSTMAN_Token:  ${{ secrets.Postman_TOKEN }}
-        run:  newman run Trello_collection.json -e Trelllo_Prod_environment.json --env-var "api_key=${Postman_AI_KEY}" --env-var "token=${Postman_TOKEN}"
+         POSTMAN_AI_KEY:  ${{ secrets.POSTMAN_AI_KEY }}
+         POSTMAN_Token:  ${{ secrets.POSTMAN_TOKEN }}
+        run: | 
+              newman run "Trello_collection.json"  \ -e "Trelllo_Prod_environment.json" \ 
+              --env-var "api_key=${POSTMAN_AI_KEY}" \ --env-var "token=${POSTMAN_TOKEN}"
       

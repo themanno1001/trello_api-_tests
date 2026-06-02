@@ -63,61 +63,6 @@
       "response": []
     },
     {
-      "name": "Create Board Copy",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "var  jsondata = pm.response.json();\r",
-              "pm.collectionVariables.set(\"BoardID\", jsondata.id);\r",
-              "\r",
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
-            ],
-            "type": "text/javascript",
-            "packages": {},
-            "requests": {}
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "https://api.trello.com/1/boards/?name=My_Exp&key={{key}}&token={{token}}",
-          "protocol": "https",
-          "host": [
-            "api",
-            "trello",
-            "com"
-          ],
-          "path": [
-            "1",
-            "boards",
-            ""
-          ],
-          "query": [
-            {
-              "key": "name",
-              "value": "My_Exp"
-            },
-            {
-              "key": "key",
-              "value": "{{key}}"
-            },
-            {
-              "key": "token",
-              "value": "{{token}}"
-            }
-          ]
-        },
-        "description": "Generated from cURL: curl --request POST \\\r\n  --url 'https://api.trello.com/1/boards/?name={name}&key=APIKey&token=APIToken'"
-      },
-      "response": []
-    },
-    {
       "name": "Get Board",
       "event": [
         {
@@ -1153,44 +1098,6 @@
           ]
         },
         "description": "Generated from cURL: curl --request GET \\\r\n  --url 'https://api.trello.com/1/boards/{id}?key=APIKey&token=APIToken' \\\r\n  --header 'Accept: application/json'"
-      },
-      "response": []
-    },
-    {
-      "name": "Move List to board",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "url": {
-          "raw": "https://api.trello.com/1/lists/{id}/idBoard?value=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken",
-          "protocol": "https",
-          "host": [
-            "api",
-            "trello",
-            "com"
-          ],
-          "path": [
-            "1",
-            "lists",
-            "{id}",
-            "idBoard"
-          ],
-          "query": [
-            {
-              "key": "value",
-              "value": "5abbe4b7ddc1b351ef961414"
-            },
-            {
-              "key": "key",
-              "value": "APIKey"
-            },
-            {
-              "key": "token",
-              "value": "APIToken"
-            }
-          ]
-        },
-        "description": "Generated from cURL: curl --request PUT \\\r\n  --url 'https://api.trello.com/1/lists/{id}/idBoard?value=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken'"
       },
       "response": []
     }

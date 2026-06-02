@@ -20,7 +20,7 @@ jobs:
           POSTMAN_TOKEN: ${{ secrets.POSTMAN_TOKEN }}
         run: |
           newman run "Trello_collection.json" \
-            -e "Trello_Prod_environment.json" \
+            -e "Trello_Prod_environment" \
             --env-var "api_key=${POSTMAN_API_KEY}" \
             --env-var "token=${POSTMAN_TOKEN}"
       

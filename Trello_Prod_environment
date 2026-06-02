@@ -4,16 +4,22 @@
 	"values": [
 		{
 			"key": " base_url",
-			"value": "",
+			"value": "https://api.trello.com",
 			"type": "default",
 			"enabled": true
 		},
+
 		{
-			"key": " base_-url",
-			"value": "",
-			"type": "default",
-			"enabled": true
-		}
+      "key": "key",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    }
+
 	],
 	"color": null,
 	"_postman_variable_scope": "environment",

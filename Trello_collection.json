@@ -1041,7 +1041,7 @@
       "response": []
     },
     {
-      "name": "Get Board",
+      "name": "Get Board after delete",
       "event": [
         {
           "listen": "prerequest",

@@ -1,5 +1,5 @@
 # Trello API Test Automation
-
+End-to-end API test automation framework built with Postman, Newman, and GitHub Actions.
 ## Overview
 
 This project demonstrates automated API testing of the Trello REST API using **Postman**, **Newman**, and **GitHub Actions**.

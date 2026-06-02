@@ -16,11 +16,11 @@ jobs:
 
       - name: Run Collection
         env:
-          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
+          POSTMAN_API_KEY: ${{ secrets.POSTMAN_AI_KEY }}
           POSTMAN_TOKEN: ${{ secrets.POSTMAN_TOKEN }}
         run: |
           newman run "Trello_collection.json" \
             -e "Trello_Prod_environment" \
-            --env-var "api_key=${POSTMAN_API_KEY}" \
+            --env-var "key=${POSTMAN_AI_KEY}" \
             --env-var "token=${POSTMAN_TOKEN}"
       

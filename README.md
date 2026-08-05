@@ -6,7 +6,7 @@ This project demonstrates automated API testing of the Trello REST API using **P
 
 The test suite validates core Trello functionality including board, list, card, and checklist operations. Tests are executed automatically through a CI/CD pipeline whenever code is pushed to the repository or when the workflow is manually triggered.
 
-This project showcases API testing, test automation, environment management, and continuous integration skills. 
+This project showcases API testing, test automation, environment management, and continuous integration skills  . 
 
 ---
 
